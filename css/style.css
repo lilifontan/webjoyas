@@ -1,0 +1,328 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffcaaf;
+}
+/*clase agregada para armado de grid Home*/
+.contenedor {
+  display: grid;
+  grid-template-columns: repeat (4, 1fr);
+  grid-template-rows: (4, 1fr);
+  grid-template-areas:
+    "headerHome headerHome headerHome headerHome"
+    "destacados destacados destacados destacados"
+    "card1 card2 card3 card4"
+    "pie pie pie pie";
+}
+
+/*clase agregada para armado de grid Productos*/
+.contenedor-productos {
+  display: grid;
+  grid-template-columns: repeat (4, 1fr);
+  grid-template-rows: (4, 1fr);
+  grid-template-areas:
+    "header header header header"
+    "titulo titulo titulo titulo"
+    "card1 card2 card3 card4"
+    "pie pie pie pie";
+}
+
+/*clase agregada para armado de grid Sobre mí*/
+.contenedor-sobreMi,
+.contenedor-novedades {
+  display: grid;
+  grid-template-columns: repeat (4, 1fr);
+  grid-template-rows: (4, 1fr);
+  grid-template-areas:
+    "header header header header"
+    "titulo titulo titulo titulo"
+    "sectionText sectionText sectionText sectionText"
+    "pie pie pie pie";
+}
+/*clase agregada para armado de grid Form de Contacto*/
+.contenedor-form {
+  display: grid;
+  grid-template-columns: repeat (4, 1fr);
+  grid-template-rows: (4, 1fr);
+  grid-template-areas:
+    "header header header header"
+    "titulo titulo titulo titulo"
+    "formulario formulario formulario formulario"
+    "pie pie pie pie";
+}
+
+.navbar {
+  background-color: rgba(0, 0, 0, 0.39);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  grid-area: navbar;
+}
+.titulo {
+  grid-area: titulo;
+}
+
+.sectionText {
+  grid-area: sectionText;
+}
+
+h1 {
+  text-align: center;
+  padding: 3rem;
+  font-family: cursive;
+  font-size: 2.2rem;
+}
+h2 {
+  font-size: 1.2rem;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  gap: 2rem;
+  margin-right: 2rem;
+}
+
+.navbar ul li a {
+  color: #ffcaaf;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-family: cursive;
+}
+
+.navbar ul li a:hover {
+  color: rgb(202, 163, 236);
+}
+
+header {
+  background-color: black;
+  height: 10vh;
+  grid-area: header;
+}
+
+.headerHome {
+  background-image: url(/Imagenes/slider1.png);
+  height: 65vh;
+  grid-area: headerHome;
+}
+.section-productos {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffcaaf;
+}
+.section-productos h1 {
+  text-align: center;
+  padding: 2rem;
+  font-family: cursive;
+  font-size: 1.8rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.destacados {
+  display: flex;
+  grid-area: destacados;
+  justify-content: center;
+}
+.card1 {
+  padding: 2rem;
+  grid-area: card1;
+}
+.card2 {
+  padding: 2rem;
+  grid-area: card2;
+}
+.card3 {
+  padding: 2rem;
+  grid-area: card3;
+}
+.card4 {
+  padding: 2rem;
+  grid-area: card4;
+}
+.card1 img {
+  width: 22rem;
+}
+.card2 img {
+  width: 22rem;
+}
+.card3 img {
+  width: 22rem;
+}
+.card4 img {
+  width: 22rem;
+}
+
+.textos {
+  display: flex;
+  justify-content: space-around;
+  font-family: cursive;
+  padding-top: 1.5rem;
+  padding-bottom: 3.5rem;
+  width: 20rem;
+}
+.sectionText {
+  text-align: justify;
+  padding: 1rem;
+  font-family: cursive;
+  font-size: 1rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  height: 66vh;
+}
+footer {
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+  background-color: black;
+  grid-area: pie;
+}
+footer ul {
+  display: flex;
+  justify-content: center;
+  gap: 8rem;
+  align-items: center;
+  list-style: none;
+  margin-right: 5rem;
+  margin-left: 5rem;
+}
+footer ul li a {
+  color: #ffcaaf;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-family: cursive;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffcaaf;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  gap: 0.5rem;
+  font-weight: bold;
+  color: rgb(8, 0, 0);
+}
+.btn {
+  margin: 2rem auto;
+  width: 10%;
+  background-color: rgb(114, 40, 92);
+  border: none;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  color: white;
+  font-size: large;
+}
+input,
+textarea {
+  background-color: white(238, 238, 245, 0.432);
+  color: rgb(26, 22, 22);
+}
+.formulario {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  gap: 0.5rem;
+  font-weight: bold;
+  grid-area: formulario;
+}
+.nombre {
+  font-size: larger;
+}
+.email {
+  font-size: larger;
+}
+.telefono {
+  font-size: larger;
+}
+.mensaje {
+  font-size: larger;
+}
+label {
+  font-size: larger;
+  margin-top: 0.5rem;
+  font-size: 1.3rem;
+  font-family: cursive;
+}
+
+@media screen and (max-width: 768px) {
+  .contenedor {
+    grid-template-columns: repeat (4, 1fr);
+    grid-template-rows: (5, 1fr);
+    grid-template-areas:
+      "headerHome headerHome headerHome headerHome"
+      "destacados destacados destacados destacados"
+      "card1 card1 card2 card2"
+      "card3 card3 card4 card4"
+      "pie pie pie pie";
+  }
+
+  .navbar ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 2rem;
+    margin-right: 2rem;
+  }
+  .headerHome {
+    background-image: url(/Imagenes/slider1.png);
+    height: 45vh;
+    grid-area: headerHome;
+  }
+  .sectionText {
+    font-size: 0.8rem;
+  }
+  .contenedor-productos {
+    display: grid;
+    grid-template-columns: repeat (4, 1fr);
+    grid-template-rows: (5, 1fr);
+    grid-template-areas:
+      "header header header header"
+      "titulo titulo titulo titulo"
+      "card1 card1 card2 card2"
+      "card3 card3 card4 card4"
+      "pie pie pie pie";
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .contenedor {
+    grid-template-columns: repeat (4, 1fr);
+    grid-template-rows: (7, 1fr);
+    grid-template-areas:
+      "headerHome headerHome headerHome headerHome"
+      "destacados destacados destacados destacados"
+      "card1 card1 card1 card1"
+      "card2 card2 card2 card2"
+      "card3 card3 card3 card3"
+      "card4 card4 card4 card4"
+      "pie pie pie pie";
+  }
+  .card1 img,
+  .card2 img,
+  .card3 img,
+  .card4 img {
+    width: 80%;
+    margin-left: 5rem;
+  }
+
+  .contenedor-productos {
+    display: grid;
+    grid-template-columns: repeat (4, 1fr);
+    grid-template-rows: (7 1fr);
+    grid-template-areas:
+      "header header header header"
+      "titulo titulo titulo titulo"
+      "card1 card1 card1 card1"
+      "card2 card2 card2 card2"
+      "card3 card3 card3 card3"
+      "card4 card4 card4 card4"
+      "pie pie pie pie";
+  }
+}
