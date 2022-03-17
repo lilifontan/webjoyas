@@ -3,7 +3,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 /*clase agregada para armado de grid Home*/
 .contenedor {
   display: grid;
@@ -47,7 +46,7 @@
   grid-template-rows: (4, 1fr);
   grid-template-areas:
     "header header header header"
-    "titulo titulo titulo titulo"
+    "destacados destacados destacados destacados"
     "formulario formulario formulario formulario"
     "pie pie pie pie";
 }
@@ -74,9 +73,7 @@ h1 {
   /*font-family: cursive;
   font-size: 2.2rem;*/
 }
-/*h2 {
-  font-size: 1.2rem;
-}*/
+
 
 .navbar ul {
   display: flex;
@@ -104,9 +101,9 @@ header {
 }
 
 .headerHome {
-  /*background-image: url(../Imagenes/slider1.png);*/
+  background-image: url(../Imagenes/slider1.png);
   width: 100%;
-  /* height: 55vh;*/
+  height: 55vh;
   grid-area: headerHome;
 }
 
@@ -115,14 +112,6 @@ header {
   flex-direction: column;
   background-color: #ffcaaf;
 }
-/*.section-productos h1 {
-  text-align: center;
-  padding: 2rem;
-  font-family: cursive;
-  font-size: 1.8rem;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}*/
 
 .destacados {
   display: flex;
@@ -202,16 +191,21 @@ footer ul li a {
 form {
   display: flex;
   flex-direction: column;
-  /*background-color: #ffcaaf;*/
-  padding: 2rem;
-  border-radius: 0.5rem;
-  gap: 0.5rem;
+  justify-content:flex-end;
+  /*background-color: #ffcaaf;
+  padding:10%;
+    gap: 10%;
+  /*border-radius: 0.5rem;*/
+  padding: 5%;;
   font-weight: bold;
   color: rgb(8, 0, 0);
 }
+.mb-3{
+  width: 60%;
+}
 .btn {
   margin: 2rem auto;
-  width: 10%;
+  width: 20S%;
   background-color: rgb(114, 40, 92);
   border: none;
   padding: 0.5rem;
@@ -273,12 +267,7 @@ label {
     gap: 2rem;
     margin-right: 2rem;
   }
-  .headerHome {
-    background-image: url(/Imagenes/slider1.png);
-    width: 100%;
-    /* height: 45vh;*/
-    grid-area: headerHome;
-  }
+
   .sectionText {
     font-size: 0.8rem;
   }
