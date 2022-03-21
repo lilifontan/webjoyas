@@ -147,6 +147,10 @@ header {
 .card4 img {
   width: 100%;
 }
+.scale:hover {
+  transform: scale(1.1, 1.1);
+  transition: all 1s ease;
+}
 
 .textos {
   display: flex;
