@@ -19,10 +19,11 @@
 .contenedor-productos {
   display: grid;
   grid-template-columns: repeat (4, 1fr);
-  grid-template-rows: (4, 1fr);
+  grid-template-rows: (5, 1fr);
   grid-template-areas:
     "header header header header"
     "destacados destacados destacados destacados"
+    "container container container container"
     "card1 card2 card3 card4"
     "pie pie pie pie";
 }
@@ -192,6 +193,7 @@ footer ul li a {
   /* font-family: cursive;*/
 }
 form {
+  width: auto;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
