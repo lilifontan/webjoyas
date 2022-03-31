@@ -101,10 +101,13 @@ h1 {
   width: 100%;
 }
 .card {
-  padding: 2rem;
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
 }
 .card1 {
 @extend .card;
+padding-right: 2rem;
+padding-left: 5rem;
   grid-area: card1;
    img {
     width: 100%;
@@ -112,6 +115,8 @@ h1 {
 }
 .card2 {
   @extend .card;
+  padding-right: 2rem;
+padding-left: 2rem;
   grid-area: card2;
    img {
     width: 100%;
@@ -119,6 +124,8 @@ h1 {
 }
 .card3 {
   @extend .card;
+  padding-right: 2rem;
+padding-left: 2rem;
   grid-area: card3;
   img {
     width: 100%;
@@ -126,6 +133,8 @@ h1 {
 }
 .card4 {
   @extend .card;
+  padding-right: 5rem;
+padding-left: 2rem;
   grid-area: card4;
   img {
     width: 100%;

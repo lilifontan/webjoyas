@@ -154,24 +154,33 @@ h1 {
   width: 100%; }
 
 .card, .card1, .card2, .card3, .card4 {
-  padding: 2rem; }
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem; }
 
 .card1 {
+  padding-right: 2rem;
+  padding-left: 5rem;
   grid-area: card1; }
   .card1 img {
     width: 100%; }
 
 .card2 {
+  padding-right: 2rem;
+  padding-left: 2rem;
   grid-area: card2; }
   .card2 img {
     width: 100%; }
 
 .card3 {
+  padding-right: 2rem;
+  padding-left: 2rem;
   grid-area: card3; }
   .card3 img {
     width: 100%; }
 
 .card4 {
+  padding-right: 5rem;
+  padding-left: 2rem;
   grid-area: card4; }
   .card4 img {
     width: 100%; }
