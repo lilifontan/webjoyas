@@ -90,6 +90,7 @@ footer {
 /*clase agregada para armado de grid Home*/
 .contenedor {
   display: grid;
+  background-color: #f7d8c8;
   grid-template-columns: repeat 4, 1fr;
   grid-template-rows: 4, 1fr;
   grid-template-areas: "headerHome headerHome headerHome headerHome" "destacados destacados destacados destacados" "card1 card2 card3 card4" "pie pie pie pie"; }
@@ -97,6 +98,7 @@ footer {
 /*clase agregada para armado de grid Productos*/
 .contenedor-productos {
   display: grid;
+  background-color: #e6edd1;
   grid-template-columns: repeat 4, 1fr;
   grid-template-rows: 5, 1fr;
   grid-template-areas: "header header header header" "destacados destacados destacados destacados" "container container container container" "card1 card2 card3 card4" "pie pie pie pie"; }
@@ -105,6 +107,7 @@ footer {
 .contenedor-sobreMi,
 .contenedor-novedades {
   display: grid;
+  background-color: #c5c3da;
   grid-template-columns: repeat 4, 1fr;
   grid-template-rows: 4, 1fr;
   grid-template-areas: "header header header header" "destacados destacados destacados destacados" "sectionText sectionText sectionText sectionText" "pie pie pie pie"; }
@@ -112,6 +115,7 @@ footer {
 /*clase agregada para armado de grid Form de Contacto*/
 .contenedor-form {
   display: grid;
+  background-color: #e0d2d4;
   grid-template-columns: repeat 4, 1fr;
   grid-template-rows: 4, 1fr;
   grid-template-areas: "header header header header" "destacados destacados destacados destacados" "formulario formulario formulario formulario" "pie pie pie pie"; }

@@ -7,9 +7,15 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+@mixin backgrounds($colors){
+  background-color: $colors;
+}
+
 /*clase agregada para armado de grid Home*/
 .contenedor {
   display: grid;
+  @include backgrounds($color1);
   grid-template-columns: repeat (4, 1fr);
   grid-template-rows: (4, 1fr);
   grid-template-areas:
@@ -22,6 +28,7 @@
 /*clase agregada para armado de grid Productos*/
 .contenedor-productos {
   display: grid;
+  @include backgrounds($color2);
   grid-template-columns: repeat (4, 1fr);
   grid-template-rows: (5, 1fr);
   grid-template-areas:
@@ -30,12 +37,14 @@
     "container container container container"
     "card1 card2 card3 card4"
     "pie pie pie pie";
+
 }
 
 /*clase agregada para armado de grid Sobre mí*/
 .contenedor-sobreMi,
 .contenedor-novedades {
   display: grid;
+  @include backgrounds($color3);
   grid-template-columns: repeat (4, 1fr);
   grid-template-rows: (4, 1fr);
   grid-template-areas:
@@ -47,6 +56,7 @@
 /*clase agregada para armado de grid Form de Contacto*/
 .contenedor-form {
   display: grid;
+  @include backgrounds($color4);
   grid-template-columns: repeat (4, 1fr);
   grid-template-rows: (4, 1fr);
   grid-template-areas:
@@ -55,6 +65,7 @@
     "formulario formulario formulario formulario"
     "pie pie pie pie";
 }
+
 
 .titulo {
   grid-area: titulo;
