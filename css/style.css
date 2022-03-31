@@ -92,14 +92,14 @@ footer {
   display: grid;
   grid-template-columns: repeat 4, 1fr;
   grid-template-rows: 4, 1fr;
-  grid-template-areas: "headerHome headerHome headerHome headerHome" "destacados destacados destacados destacados" "card1 card2 card3 card4" "pie pie pie pie"; }
+  grid-template-areas: "headerHome headerHome headerHome headerHome" "destacados destacados destacados destacados" "card1 card2 card3 card4" "pie pie pie pie"; }
 
 /*clase agregada para armado de grid Productos*/
 .contenedor-productos {
   display: grid;
   grid-template-columns: repeat 4, 1fr;
   grid-template-rows: 5, 1fr;
-  grid-template-areas: "header header header header" "destacados destacados destacados destacados" "container container container container" "card1 card2 card3 card4" "pie pie pie pie"; }
+  grid-template-areas: "header header header header" "destacados destacados destacados destacados" "container container container container" "card1 card2 card3 card4" "pie pie pie pie"; }
 
 /*clase agregada para armado de grid Sobre mí*/
 .contenedor-sobreMi,
@@ -107,14 +107,14 @@ footer {
   display: grid;
   grid-template-columns: repeat 4, 1fr;
   grid-template-rows: 4, 1fr;
-  grid-template-areas: "header header header header" "destacados destacados destacados destacados" "sectionText sectionText sectionText sectionText" "pie pie pie pie"; }
+  grid-template-areas: "header header header header" "destacados destacados destacados destacados" "sectionText sectionText sectionText sectionText" "pie pie pie pie"; }
 
 /*clase agregada para armado de grid Form de Contacto*/
 .contenedor-form {
   display: grid;
   grid-template-columns: repeat 4, 1fr;
   grid-template-rows: 4, 1fr;
-  grid-template-areas: "header header header header" "destacados destacados destacados destacados" "formulario formulario formulario formulario" "pie pie pie pie"; }
+  grid-template-areas: "header header header header" "destacados destacados destacados destacados" "formulario formulario formulario formulario" "pie pie pie pie"; }
 
 .titulo {
   grid-area: titulo;
@@ -153,33 +153,28 @@ h1 {
   justify-content: center;
   width: 100%; }
 
+.card, .card1, .card2, .card3, .card4 {
+  padding: 2rem; }
+
 .card1 {
-  padding: 2rem;
   grid-area: card1; }
+  .card1 img {
+    width: 100%; }
 
 .card2 {
-  padding: 2rem;
   grid-area: card2; }
+  .card2 img {
+    width: 100%; }
 
 .card3 {
-  padding: 2rem;
   grid-area: card3; }
+  .card3 img {
+    width: 100%; }
 
 .card4 {
-  padding: 2rem;
   grid-area: card4; }
-
-.card1 img {
-  width: 100%; }
-
-.card2 img {
-  width: 100%; }
-
-.card3 img {
-  width: 100%; }
-
-.card4 img {
-  width: 100%; }
+  .card4 img {
+    width: 100%; }
 
 .scale:hover {
   transform: scale(1.1, 1.1);
@@ -253,7 +248,7 @@ label {
   .contenedor {
     grid-template-columns: repeat 4, 1fr;
     grid-template-rows: 5, 1fr;
-    grid-template-areas: "headerHome headerHome headerHome headerHome" "destacados destacados destacados destacados" "card1 card1 card2 card2" "card3 card3 card4 card4" "pie pie pie pie"; }
+    grid-template-areas: "headerHome headerHome headerHome headerHome" "destacados destacados destacados destacados" "card1 card1 card2 card2" "card3 card3 card4 card4" "pie pie pie pie"; }
   .navbar ul {
     display: flex;
     list-style: none;
@@ -266,13 +261,13 @@ label {
     display: grid;
     grid-template-columns: repeat 4, 1fr;
     grid-template-rows: 5, 1fr;
-    grid-template-areas: "header header header header" "titulo titulo titulo titulo" "card1 card1 card2 card2" "card3 card3 card4 card4" "pie pie pie pie"; } }
+    grid-template-areas: "header header header header" "titulo titulo titulo titulo" "card1 card1 card2 card2" "card3 card3 card4 card4" "pie pie pie pie"; } }
 
 @media screen and (max-width: 320px) {
   .contenedor {
     grid-template-columns: repeat 4, 1fr;
     grid-template-rows: 7, 1fr;
-    grid-template-areas: "headerHome headerHome headerHome headerHome" "destacados destacados destacados destacados" "card1 card1 card1 card1" "card2 card2 card2 card2" "card3 card3 card3 card3" "card4 card4 card4 card4" "pie pie pie pie"; }
+    grid-template-areas: "headerHome headerHome headerHome headerHome" "destacados destacados destacados destacados" "card1 card1 card1 card1" "card2 card2 card2 card2" "card3 card3 card3 card3" "card4 card4 card4 card4" "pie pie pie pie"; }
   .card1 img,
   .card2 img,
   .card3 img,
@@ -283,4 +278,4 @@ label {
     display: grid;
     grid-template-columns: repeat 4, 1fr;
     grid-template-rows: 7 1fr;
-    grid-template-areas: "header header header header" "titulo titulo titulo titulo" "card1 card1 card1 card1" "card2 card2 card2 card2" "card3 card3 card3 card3" "card4 card4 card4 card4" "pie pie pie pie"; } }
+    grid-template-areas: "header header header header" "titulo titulo titulo titulo" "card1 card1 card1 card1" "card2 card2 card2 card2" "card3 card3 card3 card3" "card4 card4 card4 card4" "pie pie pie pie"; } }

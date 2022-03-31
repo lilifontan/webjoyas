@@ -1,5 +1,6 @@
 @import "header";
 @import "footer";
+@import "variables";
 
 * {
   margin: 0;
@@ -99,34 +100,38 @@ h1 {
   justify-content: center;
   width: 100%;
 }
-.card1 {
+.card {
   padding: 2rem;
+}
+.card1 {
+@extend .card;
   grid-area: card1;
+   img {
+    width: 100%;
+  }
 }
 .card2 {
-  padding: 2rem;
+  @extend .card;
   grid-area: card2;
+   img {
+    width: 100%;
+  }
 }
 .card3 {
-  padding: 2rem;
+  @extend .card;
   grid-area: card3;
+  img {
+    width: 100%;
+  }
 }
 .card4 {
-  padding: 2rem;
+  @extend .card;
   grid-area: card4;
+  img {
+    width: 100%;
+  }
 }
-.card1 img {
-  width: 100%;
-}
-.card2 img {
-  width: 100%;
-}
-.card3 img {
-  width: 100%;
-}
-.card4 img {
-  width: 100%;
-}
+
 .scale:hover {
   transform: scale(1.1, 1.1);
   transition: all 1s ease;
