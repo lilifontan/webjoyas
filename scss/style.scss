@@ -111,6 +111,13 @@ h1 {
   justify-content: center;
   width: 100%;
 }
+
+.textos {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 1.5rem;
+  padding-bottom: 3.5rem;
+}
 .card {
   padding-top: 3.5rem;
   padding-bottom: 3.5rem;
@@ -157,12 +164,12 @@ padding-left: 2rem;
   transition: all 1s ease;
 }
 
-.textos {
+/*.textos {
   display: flex;
   justify-content: space-around;
   padding-top: 1.5rem;
   padding-bottom: 3.5rem;
-}
+}*/
 .sectionText {
   text-align: justify;
   padding: 1rem;

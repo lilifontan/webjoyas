@@ -13,8 +13,9 @@ header navbar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -29,14 +30,15 @@ header navbar ul {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  gap: 2rem;
-  margin-right: 2rem;
+  gap: 8rem;
+  margin-right: 5rem;
 }
 
 header navbar ul li a {
   color: #ffcaaf;
   text-decoration: none;
   font-size: 1.1rem;
+  font-family: cursive;
 }
 
 header navbar ul li a hover {
@@ -144,7 +146,7 @@ footer ul li a {
 .contenedor-productos {
   display: -ms-grid;
   display: grid;
-  background-color: #e6edd1;
+  background-color: #dfd7dd;
   -ms-grid-columns: repeat 4, 1fr;
       grid-template-columns: repeat 4, 1fr;
   -ms-grid-rows: 5, 1fr;
@@ -241,6 +243,16 @@ h1 {
   width: 100%;
 }
 
+.textos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-top: 1.5rem;
+  padding-bottom: 3.5rem;
+}
+
 .card, .card1, .card2, .card3, .card4 {
   padding-top: 3.5rem;
   padding-bottom: 3.5rem;
@@ -301,16 +313,12 @@ h1 {
   transition: all 1s ease;
 }
 
-.textos {
-  display: -webkit-box;
-  display: -ms-flexbox;
+/*.textos {
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   padding-top: 1.5rem;
   padding-bottom: 3.5rem;
-}
-
+}*/
 .sectionText {
   text-align: justify;
   padding: 1rem;

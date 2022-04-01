@@ -7,7 +7,7 @@ header {
   navbar {
     background-color: $bg-color2;
     display: flex;
-    justify-content: space-around;
+    justify-content:center;
     align-items: center;
     grid-area: navbar;
     ul {
@@ -18,13 +18,14 @@ header {
       -webkit-box-pack: center;
       -ms-flex-pack: center;
       justify-content: center;
-      gap: 2rem;
-      margin-right: 2rem;
+      gap: 8rem;
+      margin-right: 5rem;
       li {
         a {
           color: #ffcaaf;
           text-decoration: none;
           font-size: $f_size;
+          font-family: cursive;
           hover {
             color: #caa3ec;
           }

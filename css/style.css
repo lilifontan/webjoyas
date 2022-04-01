@@ -6,7 +6,7 @@ header {
   header navbar {
     background-color: rgba(0, 0, 0, 0.39);
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     grid-area: navbar; }
     header navbar ul {
@@ -17,12 +17,13 @@ header {
       -webkit-box-pack: center;
       -ms-flex-pack: center;
       justify-content: center;
-      gap: 2rem;
-      margin-right: 2rem; }
+      gap: 8rem;
+      margin-right: 5rem; }
       header navbar ul li a {
         color: #ffcaaf;
         text-decoration: none;
-        font-size: 1.1rem; }
+        font-size: 1.1rem;
+        font-family: cursive; }
         header navbar ul li a hover {
           color: #caa3ec; }
 
@@ -98,7 +99,7 @@ footer {
 /*clase agregada para armado de grid Productos*/
 .contenedor-productos {
   display: grid;
-  background-color: #e6edd1;
+  background-color: #f7c0be;
   grid-template-columns: repeat 4, 1fr;
   grid-template-rows: 5, 1fr;
   grid-template-areas: "header header header header" "destacados destacados destacados destacados" "container container container container" "card1 card2 card3 card4" "pie pie pie pie"; }
@@ -157,6 +158,12 @@ h1 {
   justify-content: center;
   width: 100%; }
 
+.textos {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 1.5rem;
+  padding-bottom: 3.5rem; }
+
 .card, .card1, .card2, .card3, .card4 {
   padding-top: 3.5rem;
   padding-bottom: 3.5rem; }
@@ -193,12 +200,12 @@ h1 {
   transform: scale(1.1, 1.1);
   transition: all 1s ease; }
 
-.textos {
+/*.textos {
   display: flex;
   justify-content: space-around;
   padding-top: 1.5rem;
-  padding-bottom: 3.5rem; }
-
+  padding-bottom: 3.5rem;
+}*/
 .sectionText {
   text-align: justify;
   padding: 1rem;
