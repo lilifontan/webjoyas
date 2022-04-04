@@ -160,12 +160,14 @@ h1 {
 
 .textos {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   padding-top: 4%;
-  padding-bottom: 4%; }
+  padding-bottom: 4%;
+  font-size: 1.5rem; }
 
 .card, .card1, .card2, .card3, .card4 {
-  padding: 12%; }
+  padding: 12%;
+  width: 100%; }
 
 .card1 {
   grid-area: card1; }
