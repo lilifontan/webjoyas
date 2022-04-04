@@ -146,7 +146,7 @@ footer ul li a {
 .contenedor-productos {
   display: -ms-grid;
   display: grid;
-  background-color: #dfd7dd;
+  background-color: #f7c0be;
   -ms-grid-columns: repeat 4, 1fr;
       grid-template-columns: repeat 4, 1fr;
   -ms-grid-rows: 5, 1fr;
@@ -247,8 +247,9 @@ h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding-top: 1.5rem;
   padding-bottom: 3.5rem;
 }
