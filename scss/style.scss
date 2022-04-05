@@ -15,7 +15,8 @@
 /*clase agregada para armado de grid Home*/
 .contenedor {
   display: grid;
- /* @include backgrounds($color1);*/
+ @include backgrounds($color1);
+ width: 100%;
   grid-template-columns: repeat (4, 1fr);
   grid-template-rows: (4, 1fr);
   grid-template-areas:
@@ -30,11 +31,12 @@
   display: grid;
   @include backgrounds($color2);
   grid-template-columns: repeat (4, 1fr);
-  grid-template-rows: (4, 1fr);
+  grid-template-rows: (5, 1fr);
   grid-template-areas:
     "header header header header"
     "destacados destacados destacados destacados"
     "card1 card2 card3 card4"
+    "card5 card6 card7 card8"
     "pie pie pie pie";
 
 }
@@ -120,7 +122,7 @@ h1 {
 }
 
 .card {
-  padding: 12%;
+  padding:8%;
   width: 100%;
 
 }
@@ -152,18 +154,41 @@ h1 {
     width: 100%;
   }
 }
+.card5 {
+  @extend .card;
+    grid-area: card5;
+     img {
+      width: 100%;
+    }
+  }
+.card6 {
+    @extend .card;
+      grid-area: card6;
+       img {
+        width: 100%;
+      }
+    }
+ .card7 {
+      @extend .card;
+        grid-area: card7;
+         img {
+          width: 100%;
+        }
+      }
+  .card8 {
+        @extend .card;
+          grid-area: card8;
+           img {
+            width: 100%;
+          }
+        }
 
 .scale:hover {
   transform: scale(1.1, 1.1);
   transition: all 1s ease;
 }
 
-/*.textos {
-  display: flex;
-  justify-content: space-around;
-  padding-top: 1.5rem;
-  padding-bottom: 3.5rem;
-}*/
+
 .sectionText {
   text-align: justify;
   padding: 1rem;
@@ -250,19 +275,21 @@ label {
   .contenedor-productos {
     display: grid;
     grid-template-columns: repeat (4, 1fr);
-    grid-template-rows: (5, 1fr);
+    grid-template-rows: (7, 1fr);
     grid-template-areas:
       "header header header header"
       "destacados destacados destacados destacados"
       "card1 card1 card2 card2"
       "card3 card3 card4 card4"
+      "card5 card5 card6 card6"
+      "card7 card7 card8 card8"
       "pie pie pie pie";
   }
 }
 
 @media screen and (max-width: 320px) {
   .contenedor {
-    grid-template-columns: repeat (4, 1fr);
+    grid-template-columns: repeat (1, 1fr);
     grid-template-rows: (7, 1fr);
     grid-template-areas:
       "headerHome headerHome headerHome headerHome"
@@ -273,18 +300,11 @@ label {
       "card4 card4 card4 card4"
       "pie pie pie pie";
   }
-  .card1 img,
-  .card2 img,
-  .card3 img,
-  .card4 img {
-    width: 100%;
-    margin-left: 10%;
-  }
 
   .contenedor-productos {
     display: grid;
     grid-template-columns: repeat (4, 1fr);
-    grid-template-rows: (7 1fr);
+    grid-template-rows: (11, 1fr);
     grid-template-areas:
       "header header header header"
       "destacados destacados destacados destacados"
@@ -292,6 +312,10 @@ label {
       "card2 card2 card2 card2"
       "card3 card3 card3 card3"
       "card4 card4 card4 card4"
+      "card5 card5 card5 card5"
+      "card6 card6 card6 card6"
+      "card7 card7 card7 card7"
+      "card8 card8 card8 card8"
       "pie pie pie pie";
   }
 }
