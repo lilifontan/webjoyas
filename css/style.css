@@ -295,12 +295,6 @@ label {
     grid-template-columns: repeat 4, 1fr;
     grid-template-rows: 7, 1fr;
     grid-template-areas: "headerHome headerHome headerHome headerHome" "destacados destacados destacados destacados" "card1 card1 card1 card1" "card2 card2 card2 card2" "card3 card3 card3 card3" "card4 card4 card4 card4" "pie pie pie pie"; }
-  .card1 img,
-  .card2 img,
-  .card3 img,
-  .card4 img {
-    width: 100%;
-    margin-left: 10%; }
   .contenedor-productos {
     display: grid;
     grid-template-columns: repeat 4, 1fr;
