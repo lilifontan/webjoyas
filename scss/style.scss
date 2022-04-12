@@ -30,11 +30,12 @@
   display: grid;
   @include backgrounds($color2);
   grid-template-columns: repeat (4, 1fr);
-  grid-template-rows: (4, 1fr);
+  grid-template-rows: (5, 1fr);
   grid-template-areas:
     "header header header header"
     "destacados destacados destacados destacados"
     "card1 card2 card3 card4"
+    "card5 card6 card7 card8"
     "pie pie pie pie";
 
 }
@@ -153,17 +154,41 @@ h1 {
   }
 }
 
+.card5 {
+  @extend .card;
+    grid-area: card5;
+     img {
+      width: 100%;
+    }
+  }
+  .card6 {
+    @extend .card;
+    grid-area: card6;
+     img {
+      width: 100%;
+    }
+  }
+  .card7 {
+    @extend .card;
+    grid-area: card7;
+    img {
+      width: 100%;
+    }
+  }
+  .card8 {
+    @extend .card;
+    grid-area: card8;
+    img {
+      width: 100%;
+    }
+  }
+
 .scale:hover {
   transform: scale(1.1, 1.1);
   transition: all 1s ease;
 }
 
-/*.textos {
-  display: flex;
-  justify-content: space-around;
-  padding-top: 1.5rem;
-  padding-bottom: 3.5rem;
-}*/
+
 .sectionText {
   text-align: justify;
   padding: 1rem;
@@ -250,12 +275,14 @@ label {
   .contenedor-productos {
     display: grid;
     grid-template-columns: repeat (4, 1fr);
-    grid-template-rows: (5, 1fr);
+    grid-template-rows: (7, 1fr);
     grid-template-areas:
       "header header header header"
       "destacados destacados destacados destacados"
       "card1 card1 card2 card2"
       "card3 card3 card4 card4"
+      "card5 card5 card6 card6"
+      "card7 card7 card8 card8"
       "pie pie pie pie";
   }
 }
@@ -284,7 +311,7 @@ label {
   .contenedor-productos {
     display: grid;
     grid-template-columns: repeat (4, 1fr);
-    grid-template-rows: (7 1fr);
+    grid-template-rows: (11, 1fr);
     grid-template-areas:
       "header header header header"
       "destacados destacados destacados destacados"
@@ -292,6 +319,10 @@ label {
       "card2 card2 card2 card2"
       "card3 card3 card3 card3"
       "card4 card4 card4 card4"
+      "card5 card5 card5 card5"
+      "card6 card6 card6 card6"
+      "card7 card7 card7 card7"
+      "card8 card8 card8 card8"
       "pie pie pie pie";
   }
 }
