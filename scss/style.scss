@@ -12,10 +12,10 @@
   box-sizing: border-box;
 }
 
-/*.titulo {
+.titulo {
   grid-area: titulo;
   width: 100%;
-}*/
+}
 
 .sectionText {
   grid-area: sectionText;
@@ -57,10 +57,23 @@ h2{
   justify-content: center;
   width: 100%;
 }
+
+.textos {
+  display: flex;
+  justify-content: center;
+  padding-top: 4%;
+  padding-bottom: 4%;
+  font-size: 1.5rem;
+}
+
 .sectionText {
   text-align: justify;
   padding-right: 4%;
   padding-left: 4%;
   width: 100%;
 }
+
+
+
+
 
