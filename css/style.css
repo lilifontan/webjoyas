@@ -55,13 +55,13 @@ ul li a:hover {
 .contenedor {
   display: grid;
   grid-template-columns: repeat 4, 1fr;
-  grid-template-rows: 4, 1fr;
-  grid-template-areas: "header header header header" "destacados destacados destacados destacados" "card1 card2 card3 card4" "pie pie pie pie"; }
+  grid-template-rows: 5, 1fr;
+  grid-template-areas: "header header header header" "contenedor_carousel contenedor_carousel contenedor_carousel contenedor_carousel" "destacados destacados destacados destacados" "card1 card2 card3 card4" "pie pie pie pie"; }
 
 /*clase agregada para armado de grid Productos*/
 .contenedor-productos {
   display: grid;
-  background-color: #f7c0be;
+  background-color: #e0d2d4;
   grid-template-columns: repeat 4, 1fr;
   grid-template-rows: 4, 1fr;
   grid-template-areas: "header header header header" "destacados destacados destacados destacados" "card1 card2 card3 card4" "card5 card6 card7 card8" "pie pie pie pie"; }
@@ -70,7 +70,7 @@ ul li a:hover {
 .contenedor-sobreMi,
 .contenedor-novedades {
   display: grid;
-  background-color: #c5c3da;
+  background-color: #e0d2d4;
   grid-template-columns: repeat 4, 1fr;
   grid-template-rows: 4, 1fr;
   grid-template-areas: "header header header header" "destacados destacados destacados destacados" "sectionText sectionText sectionText sectionText" "pie pie pie pie"; }
@@ -81,15 +81,14 @@ ul li a:hover {
   background-color: #e0d2d4;
   grid-template-columns: repeat 4, 1fr;
   grid-template-rows: 4, 1fr;
-  grid-template-areas: "header header header header" "destacados destacados destacados destacados" "formulario formulario formulario formulario" "pie pie pie pie"; }
+  grid-template-areas: "header header header header" "destacados destacados destacados destacados" "form form form form" "pie pie pie pie"; }
 
 form {
-  width: auto;
+  width: 100;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  padding: 5%;
-  font-weight: bold;
+  justify-content: center;
+  padding: 7%;
   color: #080000; }
   form .btn {
     margin: 2rem auto;
@@ -178,9 +177,6 @@ form {
   grid-area: titulo;
   width: 100%; }
 
-.sectionText {
-  grid-area: sectionText; }
-
 h1 {
   text-align: center;
   padding-top: 3%; }
@@ -199,40 +195,15 @@ h2 {
 
 .sectionText {
   text-align: justify;
-  padding-right: 4%;
-  padding-left: 4%;
-  width: 100%; }
+  padding: 4%;
+  width: 100%;
+  font-size: x-large;
+  grid-area: sectionText; }
+
+.contenedor_carousel {
+  grid-area: contenedor_carousel; }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
-
-.titulo {
-  grid-area: titulo;
-  width: 100%; }
-
-.sectionText {
-  grid-area: sectionText; }
-
-h1 {
-  text-align: center;
-  padding-top: 3%; }
-
-h2 {
-  text-align: center;
-  padding-top: 4%;
-  padding-bottom: 4%;
-  font-size: x-large; }
-
-.destacados {
-  display: flex;
-  grid-area: destacados;
-  justify-content: center;
-  width: 100%; }
-
-.sectionText {
-  text-align: justify;
-  padding-right: 4%;
-  padding-left: 4%;
-  width: 100%; }

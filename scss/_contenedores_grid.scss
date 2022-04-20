@@ -4,9 +4,10 @@
   .contenedor {
     display: grid;
     grid-template-columns: repeat (4, 1fr);
-    grid-template-rows: (4, 1fr);
+    grid-template-rows: (5, 1fr);
     grid-template-areas:
       "header header header header"
+      "contenedor_carousel contenedor_carousel contenedor_carousel contenedor_carousel"
       "destacados destacados destacados destacados"
       "card1 card2 card3 card4"
       "pie pie pie pie";
@@ -15,7 +16,7 @@
   /*clase agregada para armado de grid Productos*/
   .contenedor-productos {
     display: grid;
-    @include backgrounds($color2);
+    @include backgrounds($color4);
     grid-template-columns: repeat (4, 1fr);
     grid-template-rows: (4, 1fr);
     grid-template-areas:
@@ -30,7 +31,7 @@
   .contenedor-sobreMi,
   .contenedor-novedades {
     display: grid;
-    @include backgrounds($color3);
+    @include backgrounds($color4);
     grid-template-columns: repeat (4, 1fr);
     grid-template-rows: (4, 1fr);
     grid-template-areas:
@@ -48,6 +49,8 @@
     grid-template-areas:
       "header header header header"
       "destacados destacados destacados destacados"
-      "formulario formulario formulario formulario"
+      "form form form form"
       "pie pie pie pie";
   }
+
+ 

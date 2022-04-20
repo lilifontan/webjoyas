@@ -3,10 +3,6 @@
     width: 100%;
   }
   
-  .sectionText {
-    grid-area: sectionText;
-  }
-  
   h1 {
     text-align: center;
     padding-top: 3%;
@@ -28,9 +24,10 @@
   
   .sectionText {
     text-align: justify;
-    padding-right: 4%;
-    padding-left: 4%;
+    padding: 4%;
     width: 100%;
+    font-size: x-large;
+    grid-area: sectionText;
   }
   
   
