@@ -1,0 +1,40 @@
+.titulo {
+    grid-area: titulo;
+    width: 100%;
+  }
+  
+  .sectionText {
+    grid-area: sectionText;
+  }
+  
+  h1 {
+    text-align: center;
+    padding-top: 3%;
+  }
+  
+  h2{
+    text-align: center;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    font-size: x-large;
+  }
+  
+  .destacados {
+    display: flex;
+    grid-area: destacados;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .sectionText {
+    text-align: justify;
+    padding-right: 4%;
+    padding-left: 4%;
+    width: 100%;
+  }
+  
+  
+  
+  
+  
+  

@@ -15,9 +15,12 @@ header {
       font-size: 1.1rem;
       font-family: cursive;
       padding: 1.8rem; }
-      header ul li a hover {
+      header ul li a :hover {
         color: #caa3ec; }
 
+/* ul li a:hover  {
+  color: rgb(202, 163, 236);
+ }
 /*.headerHome {
   background-image: url(../Imagenes/slider1.png);
   width: 100%;
@@ -26,7 +29,7 @@ header {
 }*/
 footer {
   padding-top: 2rem;
-  padding-bottom: 3.6rem;
+  padding-bottom: 2rem;
   background-color: black;
   grid-area: pie; }
   footer ul {
@@ -44,6 +47,9 @@ footer {
       text-decoration: none;
       font-size: 1.1rem;
       font-family: cursive; }
+
+ul li a:hover {
+  color: #caa3ec; }
 
 /*clase agregada para armado de grid Home*/
 .contenedor {
@@ -168,6 +174,35 @@ form {
     grid-template-rows: 11, 1fr;
     grid-template-areas: "header header header header" "destacados destacados destacados destacados" "card1 card1 card1 card1" "card2 card2 card2 card2" "card3 card3 card3 card3" "card4 card4 card4 card4" "card5 card5 card5 card5" "card6 card6 card6 card6" "card7 card7 card7 card7" "card8 card8 card8 card8" "pie pie pie pie"; } }
 
+.titulo {
+  grid-area: titulo;
+  width: 100%; }
+
+.sectionText {
+  grid-area: sectionText; }
+
+h1 {
+  text-align: center;
+  padding-top: 3%; }
+
+h2 {
+  text-align: center;
+  padding-top: 4%;
+  padding-bottom: 4%;
+  font-size: x-large; }
+
+.destacados {
+  display: flex;
+  grid-area: destacados;
+  justify-content: center;
+  width: 100%; }
+
+.sectionText {
+  text-align: justify;
+  padding-right: 4%;
+  padding-left: 4%;
+  width: 100%; }
+
 * {
   margin: 0;
   padding: 0;
@@ -189,21 +224,6 @@ h2 {
   padding-top: 4%;
   padding-bottom: 4%;
   font-size: x-large; }
-
-.navbar ul {
-  display: flex;
-  list-style: none;
-  justify-content: center;
-  gap: 2rem;
-  margin-right: 2rem; }
-
-.navbar ul li a {
-  color: #ffcaaf;
-  text-decoration: none;
-  font-size: 1.1rem; }
-
-.navbar ul li a:hover {
-  color: #caa3ec; }
 
 .destacados {
   display: flex;

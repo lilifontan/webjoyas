@@ -2,7 +2,7 @@
 
 footer {
   padding-top: 2rem;
-  padding-bottom: 3.6rem;
+  padding-bottom: 2rem;
   background-color: $bg_color;
   grid-area: pie;
   ul {
@@ -25,3 +25,6 @@ footer {
     }
   }
 }
+ul li a:hover  {
+  color: rgb(202, 163, 236);
+ }
