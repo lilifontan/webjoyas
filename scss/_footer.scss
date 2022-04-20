@@ -1,27 +1,20 @@
+@import "variables";
+
 footer {
   padding-top: 2rem;
   padding-bottom: 3.6rem;
-  background-color: black;
-  /*-ms-grid-row: 4;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 4;*/
+  background-color: $bg_color;
   grid-area: pie;
-
   ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
     gap: 8rem;
-    /*-webkit-box-align: center;
-    -ms-flex-align: center;*/
     align-items: center;
     list-style: none;
     margin-right: 5rem;
     margin-left: 5rem;
-
     li {
       a {
         color: #ffcaaf;

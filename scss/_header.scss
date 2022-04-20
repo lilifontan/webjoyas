@@ -2,31 +2,27 @@
 
 header {
   background-color: $bg_color;
-  height: $height_1;
   grid-area: header;
-  navbar {
-    background-color: $bg-color2;
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    grid-area: navbar;
+  display: flex;
+  justify-content: space-evenly;
     ul {
       display: flex;
       list-style: none;
       justify-content: center;
-      gap: 8rem;
-      margin-right: 2rem;
+      padding-left: 30rem;
+
       li a {
         color: #ffcaaf;
         text-decoration: none;
         font-size: 1.1rem;
         font-family: cursive;
+        padding:1.8rem;
         hover {
           color: rgb(202, 163, 236);
         }
       }
     }
-  }
+  
 }
 
 

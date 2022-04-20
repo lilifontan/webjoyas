@@ -1,27 +1,22 @@
 @charset "UTF-8";
 header {
   background-color: black;
-  height: 12vh;
-  grid-area: header; }
-  header navbar {
-    background-color: rgba(0, 0, 0, 0.39);
+  grid-area: header;
+  display: flex;
+  justify-content: space-evenly; }
+  header ul {
     display: flex;
+    list-style: none;
     justify-content: center;
-    align-items: center;
-    grid-area: navbar; }
-    header navbar ul {
-      display: flex;
-      list-style: none;
-      justify-content: center;
-      gap: 8rem;
-      margin-right: 2rem; }
-      header navbar ul li a {
-        color: #ffcaaf;
-        text-decoration: none;
-        font-size: 1.1rem;
-        font-family: cursive; }
-        header navbar ul li a hover {
-          color: #caa3ec; }
+    padding-left: 30rem; }
+    header ul li a {
+      color: #ffcaaf;
+      text-decoration: none;
+      font-size: 1.1rem;
+      font-family: cursive;
+      padding: 1.8rem; }
+      header ul li a hover {
+        color: #caa3ec; }
 
 /*.headerHome {
   background-image: url(../Imagenes/slider1.png);
@@ -33,20 +28,13 @@ footer {
   padding-top: 2rem;
   padding-bottom: 3.6rem;
   background-color: black;
-  /*-ms-grid-row: 4;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 4;*/
   grid-area: pie; }
   footer ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
     gap: 8rem;
-    /*-webkit-box-align: center;
-    -ms-flex-align: center;*/
     align-items: center;
     list-style: none;
     margin-right: 5rem;
