@@ -33,8 +33,8 @@
         "pie pie pie pie";
     }
   }
-  
-  @media screen and (max-width: 520px) {
+
+  @media screen and (max-width: 620px) {
     .contenedor {
       grid-template-columns: repeat (4, 1fr);
       grid-template-rows: (7, 1fr);

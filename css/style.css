@@ -162,7 +162,7 @@ form {
     grid-template-rows: 7, 1fr;
     grid-template-areas: "header header header header" "destacados destacados destacados destacados" "card1 card1 card2 card2" "card3 card3 card4 card4" "card5 card5 card6 card6" "card7 card7 card8 card8" "pie pie pie pie"; } }
 
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 620px) {
   .contenedor {
     grid-template-columns: repeat 4, 1fr;
     grid-template-rows: 7, 1fr;
