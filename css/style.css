@@ -143,7 +143,7 @@ form {
   transform: scale(1.1, 1.1);
   transition: all 1s ease; }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 770px) {
   .contenedor {
     grid-template-columns: repeat 4, 1fr;
     grid-template-rows: 5, 1fr;
@@ -162,7 +162,7 @@ form {
     grid-template-rows: 7, 1fr;
     grid-template-areas: "header header header header" "destacados destacados destacados destacados" "card1 card1 card2 card2" "card3 card3 card4 card4" "card5 card5 card6 card6" "card7 card7 card8 card8" "pie pie pie pie"; } }
 
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 768px) {
   .contenedor {
     grid-template-columns: repeat 4, 1fr;
     grid-template-rows: 7, 1fr;
