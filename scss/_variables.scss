@@ -6,3 +6,9 @@ $color1:#f7d8c8;
 $color2:#f7c0be;
 $color3:#c5c3da;
 $color4:#e0d2d4;
+
+@mixin backgrounds($colors){
+    background-color: $colors;
+  }
+
+  
