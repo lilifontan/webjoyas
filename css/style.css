@@ -1,7 +1,7 @@
 @charset "UTF-8";
 header {
   background-color: black;
-  height: 14vh;
+  height: 12vh;
   grid-area: header; }
   header navbar {
     background-color: rgba(0, 0, 0, 0.39);
@@ -10,15 +10,11 @@ header {
     align-items: center;
     grid-area: navbar; }
     header navbar ul {
-      display: -webkit-box;
-      display: -ms-flexbox;
       display: flex;
       list-style: none;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
       justify-content: center;
       gap: 8rem;
-      margin-right: 5rem; }
+      margin-right: 2rem; }
       header navbar ul li a {
         color: #ffcaaf;
         text-decoration: none;
@@ -27,41 +23,19 @@ header {
         header navbar ul li a hover {
           color: #caa3ec; }
 
-.headerHome {
+/*.headerHome {
   background-image: url(../Imagenes/slider1.png);
   width: 100%;
   height: 55vh;
-  grid-area: headerHome; }
-  .headerHome navbar {
-    background-color: rgba(0, 0, 0, 0.39);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    grid-area: navbar; }
-    .headerHome navbar ul {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      list-style: none;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center;
-      gap: 2%;
-      margin-right: 2%; }
-      .headerHome navbar ul li a {
-        color: #ffcaaf;
-        text-decoration: none;
-        font-size: 1.1rem; }
-        .headerHome navbar ul li a hover {
-          color: #caa3ec; }
-
+  grid-area: headerHome;
+}*/
 footer {
   padding-top: 2rem;
   padding-bottom: 3.6rem;
   background-color: black;
-  -ms-grid-row: 4;
+  /*-ms-grid-row: 4;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 4;
+  -ms-grid-column-span: 4;*/
   grid-area: pie; }
   footer ul {
     display: -webkit-box;
@@ -71,8 +45,8 @@ footer {
     -ms-flex-pack: center;
     justify-content: center;
     gap: 8rem;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
+    /*-webkit-box-align: center;
+    -ms-flex-align: center;*/
     align-items: center;
     list-style: none;
     margin-right: 5rem;
@@ -88,7 +62,7 @@ footer {
   display: grid;
   grid-template-columns: repeat 4, 1fr;
   grid-template-rows: 4, 1fr;
-  grid-template-areas: "headerHome headerHome headerHome headerHome" "destacados destacados destacados destacados" "card1 card2 card3 card4" "pie pie pie pie"; }
+  grid-template-areas: "header header header header" "destacados destacados destacados destacados" "card1 card2 card3 card4" "pie pie pie pie"; }
 
 /*clase agregada para armado de grid Productos*/
 .contenedor-productos {
@@ -180,7 +154,7 @@ form {
   .contenedor {
     grid-template-columns: repeat 4, 1fr;
     grid-template-rows: 5, 1fr;
-    grid-template-areas: "headerHome headerHome headerHome headerHome" "destacados destacados destacados destacados" "card1 card1 card2 card2" "card3 card3 card4 card4" "pie pie pie pie"; }
+    grid-template-areas: "header header header header" "destacados destacados destacados destacados" "card1 card1 card2 card2" "card3 card3 card4 card4" "pie pie pie pie"; }
   .navbar ul {
     display: flex;
     list-style: none;
@@ -199,13 +173,7 @@ form {
   .contenedor {
     grid-template-columns: repeat 4, 1fr;
     grid-template-rows: 7, 1fr;
-    grid-template-areas: "headerHome headerHome headerHome headerHome" "destacados destacados destacados destacados" "card1 card1 card1 card1" "card2 card2 card2 card2" "card3 card3 card3 card3" "card4 card4 card4 card4" "pie pie pie pie"; }
-  .card1 img,
-  .card2 img,
-  .card3 img,
-  .card4 img {
-    width: 100%;
-    margin-left: 10%; }
+    grid-template-areas: "header header header header" "destacados destacados destacados destacados" "card1 card1 card1 card1" "card2 card2 card2 card2" "card3 card3 card3 card3" "card4 card4 card4 card4" "pie pie pie pie"; }
   .contenedor-productos {
     display: grid;
     grid-template-columns: repeat 4, 1fr;
@@ -254,13 +222,6 @@ h2 {
   grid-area: destacados;
   justify-content: center;
   width: 100%; }
-
-.textos {
-  display: flex;
-  justify-content: center;
-  padding-top: 4%;
-  padding-bottom: 4%;
-  font-size: 1.5rem; }
 
 .sectionText {
   text-align: justify;

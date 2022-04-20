@@ -50,20 +50,11 @@ h2{
 .navbar ul li a:hover {
   color: rgb(202, 163, 236);
 }
-
 .destacados {
   display: flex;
   grid-area: destacados;
   justify-content: center;
   width: 100%;
-}
-
-.textos {
-  display: flex;
-  justify-content: center;
-  padding-top: 4%;
-  padding-bottom: 4%;
-  font-size: 1.5rem;
 }
 
 .sectionText {

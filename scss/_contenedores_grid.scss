@@ -6,7 +6,7 @@
     grid-template-columns: repeat (4, 1fr);
     grid-template-rows: (4, 1fr);
     grid-template-areas:
-      "headerHome headerHome headerHome headerHome"
+      "header header header header"
       "destacados destacados destacados destacados"
       "card1 card2 card3 card4"
       "pie pie pie pie";

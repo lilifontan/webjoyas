@@ -2,9 +2,9 @@ footer {
   padding-top: 2rem;
   padding-bottom: 3.6rem;
   background-color: black;
-  -ms-grid-row: 4;
+  /*-ms-grid-row: 4;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 4;
+  -ms-grid-column-span: 4;*/
   grid-area: pie;
 
   ul {
@@ -15,8 +15,8 @@ footer {
     -ms-flex-pack: center;
     justify-content: center;
     gap: 8rem;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
+    /*-webkit-box-align: center;
+    -ms-flex-align: center;*/
     align-items: center;
     list-style: none;
     margin-right: 5rem;
