@@ -27,8 +27,7 @@
       "pie pie pie pie";
   }
   
-  /*clase agregada para armado de grid Sobre mí*/
-  .contenedor-sobreMi,
+  /*clase agregada para armado de grid Novedades*/
   .contenedor-novedades {
     display: grid;
     @include backgrounds($color4);
@@ -40,6 +39,20 @@
       "sectionText sectionText sectionText sectionText"
       "pie pie pie pie";
   }
+    /*clase agregada para armado de grid Sobre mí*/
+    .contenedor-sobreMi {
+      display: grid;
+      @include backgrounds($color4);
+      grid-template-columns: repeat (4, 1fr);
+      grid-template-rows: (5, 1fr);
+      grid-template-areas:
+        "header header header header"
+        "destacados destacados destacados destacados"
+        "imagen imagen imagen imagen"
+        "sectionText sectionText sectionText sectionText"
+        "pie pie pie pie";
+    }
+
   /*clase agregada para armado de grid Form de Contacto*/
   .contenedor-form {
     display: grid;
