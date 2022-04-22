@@ -1,0 +1,72 @@
+@media screen and (max-width: 770px) {
+    .contenedor {
+      grid-template-columns: repeat (2, 1fr);
+      grid-template-rows: (6, 1fr);
+      grid-template-areas:
+        "header header"
+        "contenedor_carousel contenedor_carousel"
+        "destacados destacados"
+        "card1 card2"
+        "card3 card4"
+        "pie pie";
+    }
+    .navbar ul {
+      display: flex;
+      list-style: none;
+      justify-content: center;
+      gap: 2rem;
+      margin-right: 2rem;
+    }
+    .sectionText {
+      font-size: 0.8rem;
+    }
+    .contenedor-productos {
+      display: grid;
+      grid-template-columns: repeat (2, 1fr);
+      grid-template-rows: (8, 1fr);
+      grid-template-areas:
+        "header headerr"
+        "contenedor_carousel contenedor_carousel"
+        "destacados destacados"
+        "card1 card2"
+        "card3 card4"
+        "card5 card6"
+        "card7 card8"
+        "pie pie";
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .contenedor {
+      grid-template-columns: repeat (1fr);
+      grid-template-rows: (8, 1fr);
+      grid-template-areas:
+        "header"
+        "contenedor_carousel"
+        "destacados"
+        "card1"
+        "card2"
+        "card3"
+        "card4"
+        "pie";
+    }
+  
+    .contenedor-productos {
+      display: grid;
+      grid-template-columns: repeat (1fr);
+      grid-template-rows: (12, 1fr);
+      grid-template-areas:
+        "header"
+        "contenedor_carousel"
+        "destacados"
+        "card1"
+        "card2"
+        "card3"
+        "card4"
+        "card5"
+        "card6"
+        "card7"
+        "card8"
+        "pie";
+    }
+  }
