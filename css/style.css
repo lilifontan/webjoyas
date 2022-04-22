@@ -86,7 +86,7 @@ ul li a:hover {
   background-color: #e0d2d4;
   grid-template-columns: repeat 4, 1fr;
   grid-template-rows: 4, 1fr;
-  grid-template-areas: "header header header header" "destacados destacados destacados destacados" "form form form form" "pie pie pie pie"; }
+  grid-template-areas: "header header header header" "destacados destacados destacados destacados" "formulario formulario sectionForm sectionForm" "pie pie pie pie"; }
 
 form {
   width: 100;
@@ -113,6 +113,9 @@ form {
   form label {
     margin-top: 0.5rem;
     font-size: 1.3rem; }
+
+.formulario {
+  grid-area: formulario; }
 
 .imagen {
   grid-area: imagen;
@@ -211,6 +214,15 @@ h2 {
   width: 100%;
   font-size: x-large;
   grid-area: sectionText; }
+
+.sectionForm {
+  grid-area: sectionForm;
+  text-align: justify;
+  padding-left: 5%;
+  padding-right: 15%;
+  padding-top: 11%;
+  width: 100%;
+  font-size: x-large; }
 
 .contenedor_carousel {
   grid-area: contenedor_carousel; }
