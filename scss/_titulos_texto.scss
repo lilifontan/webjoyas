@@ -33,13 +33,17 @@
   .sectionForm{
     grid-area: sectionForm;
     text-align: justify;
-    padding-left: 5%;
-    padding-right: 15%;
-    padding-top: 11%;
+    padding: 10%;
     width: 100%;
     font-size: x-large;
   }
   
+  .info {
+    text-align: justify;
+    padding: 10%;
+    font-size: x-large;  
+
+  }
   
   
   
