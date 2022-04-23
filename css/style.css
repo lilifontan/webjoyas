@@ -8,7 +8,8 @@ header {
     display: flex;
     list-style: none;
     justify-content: center;
-    padding-left: 2rem; }
+    padding-left: 2rem;
+    padding-top: 1.2rem; }
     header ul li a {
       color: #ffcaaf;
       text-decoration: none;
@@ -227,16 +228,15 @@ form {
     footer ul {
       display: flex;
       flex-direction: column;
-      justify-content: center; }
+      justify-content: center;
+      gap: 1rem; }
       footer ul li a {
         color: #ffcaaf;
         font-size: 1.1rem;
         font-family: cursive;
         flex-direction: column; }
   ul li a:hover {
-    color: #caa3ec; }
-  .imagen {
-    widht: 100%; } }
+    color: #caa3ec; } }
 
 .titulo {
   grid-area: titulo;

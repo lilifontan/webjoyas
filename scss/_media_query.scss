@@ -134,6 +134,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap: 1rem;
     li {
       a {
         color: #ffcaaf;
@@ -147,8 +148,5 @@ footer {
 ul li a:hover  {
   color: rgb(202, 163, 236);
  }
-
- .imagen{
-   widht:100%
- }
   }
+
