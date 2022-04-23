@@ -58,12 +58,14 @@
     display: grid;
     @include backgrounds($color4);
     grid-template-columns: repeat (4, 1fr);
-    grid-template-rows: (4, 1fr);
+    grid-template-rows: (5, 1fr);
     grid-template-areas:
       "header header header header"
       "destacados destacados destacados destacados"
-      "formulario formulario sectionForm sectionForm"
+      "formulario formulario formulario formulario"
+      "sectionForm sectionForm sectionForm sectionForm"
       "pie pie pie pie";
+
   }
 
  
