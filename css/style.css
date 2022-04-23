@@ -89,7 +89,7 @@ ul li a:hover {
   grid-template-areas: "header header header header" "destacados destacados destacados destacados" "formulario formulario sectionForm sectionForm" "pie pie pie pie"; }
 
 form {
-  width: 100;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
