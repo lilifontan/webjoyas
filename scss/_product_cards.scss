@@ -1,12 +1,9 @@
 
-
-.imagen{
-  grid-area: imagen;
-  img {
-    width: 100%;
-    height:30rem;
-  }
-  padding-top: 3%;
+  .imagen {
+    grid-area: imagen;
+    max-width: 100%; 
+    height: auto;
+    padding-top: 3%;
   }
 
 .card_gen {
