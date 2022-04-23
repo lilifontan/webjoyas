@@ -134,16 +134,9 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /*-webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    align-items: center;
-    list-style: none;*/
-
     li {
       a {
         color: #ffcaaf;
-       /* text-decoration: none;*/
         font-size: 1.1rem;
         font-family: cursive;
         flex-direction: column;
@@ -154,4 +147,5 @@ footer {
 ul li a:hover  {
   color: rgb(202, 163, 236);
  }
+
   }
